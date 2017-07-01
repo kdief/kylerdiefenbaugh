@@ -1,3 +1,4 @@
+cd ..
 git checkout gh-pages
 git rebase master
 git push origin gh-pages
