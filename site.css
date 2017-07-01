@@ -33,3 +33,14 @@ body {
 	font-size: 22px;
 	letter-spacing: 2px;	
 }
+
+.header-console {
+	font-family: "Courier New", Courier, monospace;
+	font-size: 22px;
+}
+
+.header-script {
+	font-family: "Brush Script MT", cursive;
+	font-size: 22px;
+	letter-spacing: 4px;	
+}
