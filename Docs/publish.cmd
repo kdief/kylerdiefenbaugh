@@ -12,7 +12,7 @@ call git checkout gh-pages
 pause
 
 echo *** Syncing with master branch ***
-rem git.exe rebase master
+call git.exe rebase master
 pause
 
 echo *** Pushing to remote gh-pages branch ***
