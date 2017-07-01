@@ -8,7 +8,7 @@ cd ..
 pause
 
 echo *** Switching to gh-pages branch ***
-git.exe checkout gh-pages
+call git checkout gh-pages
 pause
 
 echo *** Syncing with master branch ***
