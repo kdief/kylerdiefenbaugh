@@ -12,15 +12,15 @@ call git checkout gh-pages
 pause
 
 echo *** Syncing with master branch ***
-call git.exe rebase master
+call git rebase master
 pause
 
 echo *** Pushing to remote gh-pages branch ***
-call git.exe push origin gh-pages
+call git push origin gh-pages
 pause
 
 echo *** Switching back to master branch ***
-call git.exe checkout master
+call git checkout master
 pause
 
 echo *** Done **
