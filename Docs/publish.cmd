@@ -8,19 +8,19 @@ cd ..
 pause
 
 echo *** Switching to gh-pages branch ***
-call git checkout gh-pages
+call git.exe checkout gh-pages
 pause
 
 echo *** Syncing with master branch ***
-call git rebase master
+call git.exe rebase master
 pause
 
 echo *** Pushing to remote gh-pages branch ***
-call git push origin gh-pages
+call git.exe push origin gh-pages
 pause
 
 echo *** Switching back to master branch ***
-call git checkout master
+call git.exe checkout master
 pause
 
 echo *** Done **
