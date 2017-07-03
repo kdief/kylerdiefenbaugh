@@ -5,7 +5,7 @@
 		<link rel="stylesheet" type="text/css" href="site.css" />
 	</head>
 	<body>
-		<a href="programming.html">
+		<a href="programming.html" onclick="hideText()">
 			<div class="sidesection" id="left">
 				<img src="laptop.jpg" alt="Computer programming and maintenance" class="sideimage">
 				<p class="header-console">Computer Programming and Maintenance</p>
@@ -26,5 +26,16 @@
 		<div class="sidetext" id="right">
 			Testing.
 		</div>
+		<script>
+			function hideText() {
+				var x = document.getElementsByName('sidetext')
+				if (x.style.display == 'none') {
+					x.style.display = 'block';
+				}
+				else {
+					x.style.display = 'none';
+				}
+			}
+		</script>
 	</body>
 </html>
