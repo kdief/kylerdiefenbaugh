@@ -17,6 +17,14 @@ body {
 	float: right;
 }
 
+#lefttext {
+	float: left;
+}
+
+#righttext {
+	float: right;
+}
+
 .sideimage {
 	width:100%;
 	height: 275px; 
