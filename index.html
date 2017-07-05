@@ -3,35 +3,42 @@
 		<meta charset="UTF-8">
 		<title>Kyler Diefenbaugh</title>
 		<link rel="stylesheet" type="text/css" href="site.css" />
+		<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 	</head>
 	<body>
-		<div class="sidesection" id="left" onclick="hideText();">
-			<img src="laptop.jpg" alt="Computer programming and maintenance" class="sideimage">
-			<p class="header-console">Computer Programming and Maintenance</p>
+		<div id="header-div-left" class="header-div left">
+			<img src="laptop.jpg" class="header-image" alt="Computer programming and maintenance" />
+			<p class="header-title console animation-typing">Computer Programming and Maintenance</p>
 		</div>
-		<div class="sidesection" id="right">
-			<img src="novel.jpg" alt="Writing" class="sideimage">
-			<p class="header-script">Creative Writing and Proofreading</p>
+		<div id="header-div-right" class="header-div right">
+			<img src="novel.jpg" class="header-image" alt="Creative writing" />
+			<p class="header-title script">Creative Writing and Proofreading</p>
 		</div>
-		<div class="centersection">
-			<img src="name.jpg" alt="Kyler Diefenbaugh">
+		<div id="header-div-center" class="header-div-center" style="border: 0px solid yellow">
+			<img src="name.jpg" alt="Kyler Diefenbaugh" />
+			<p id="contact-link">put a link her for contact form</p>
 		</div>
-		<div class="sidetext" id="lefttext">
-			Testing.
+		<div id="text-left" class="text-div console left" style="border: 0px solid red">
+			<ul>
+				<li>one</li>
+				<li>two</li>
+			</ul>
 		</div>
-		<div class="sidetext" id="righttext">
-			Testing.
+		<div id="text-right" class="text-div script right" style="border: 0px solid blue">
+			<ul>
+				<li>one</li>
+				<li>two</li>
+			</ul>
 		</div>
 		<script>
-			function hideText() {
-				var x = document.getElementsById('lefttext')
-				if (x.style.display == 'none') {
-					x.style.display = 'block';
-				}
-				else {
-					x.style.display = 'none';
-				}
-			}
-		</script>
+			$("#header-div-left").click(function() {
+				$("#text-left").css("visibility", "visible").hide().fadeIn("slow");
+			});
+			$("#header-div-right").click(function() {
+				$("#text-right").css("visibility", "visible").hide().fadeIn("slow");
+			});
+		</script>		
 	</body>
 </html>
+
+
