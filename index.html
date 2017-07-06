@@ -6,36 +6,44 @@
 		<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 	</head>
 	<body>
-		<div id="header-div-left" class="header-div left">
-			<img src="laptop.jpg" class="header-image" alt="Computer programming and maintenance" />
-			<p class="header-title console animation-typing">Computer Programming and Maintenance</p>
+	
+		<div id="main-div-left" class="main-div main-div-side" style="border: 0px solid red">		
+			<div id="header-div-left" class="header-div">
+				<img src="laptop.jpg" class="header-image" alt="Computer programming and maintenance" />
+				<p class="header-title console animation-typing">Computer Programming and Maintenance</p>
+			</div>
+			<div id="text-div-left" class="text-div console" style="border: 0px solid red">
+				<ul>
+					<li>one</li>
+					<li>two</li>
+				</ul>
+			</div>		
 		</div>
-		<div id="header-div-right" class="header-div right">
-			<img src="novel.jpg" class="header-image" alt="Creative writing" />
-			<p class="header-title script">Creative Writing and Proofreading</p>
-		</div>
-		<div id="header-div-center" class="header-div-center" style="border: 0px solid yellow">
+
+		<div id="main-div-center" class="main-div main-div-center" style="border: 0px solid yellow">
 			<img src="name.jpg" alt="Kyler Diefenbaugh" />
-			<p id="contact-link">put a link her for contact form</p>
-		</div>
-		<div id="text-left" class="text-div console left" style="border: 0px solid red">
-			<ul>
-				<li>one</li>
-				<li>two</li>
-			</ul>
-		</div>
-		<div id="text-right" class="text-div script right" style="border: 0px solid blue">
-			<ul>
-				<li>one</li>
-				<li>two</li>
-			</ul>
-		</div>
+			<a href="contact.html"><p id="contact-link">Contact</p></a>
+		</div>	
+		
+		<div id="main-div-right" class="main-div main-div-side" style="border: 0px solid blue">
+			<div id="header-div-right" class="header-div">
+				<img src="novel.jpg" class="header-image" alt="Creative writing" />
+				<p class="header-title script">Creative Writing and Proofreading</p>
+			</div>
+			<div id="text-div-right" class="text-div script" style="border: 0px solid blue">
+				<ul>
+					<li>one</li>
+					<li>two</li>
+				</ul>
+			</div>
+		</div>	
+		
 		<script>
 			$("#header-div-left").click(function() {
-				$("#text-left").css("visibility", "visible").hide().fadeIn("slow");
+				$("#text-div-left").css("visibility", "visible").hide().fadeIn("slow");
 			});
 			$("#header-div-right").click(function() {
-				$("#text-right").css("visibility", "visible").hide().fadeIn("slow");
+				$("#text-div-right").css("visibility", "visible").hide().fadeIn("slow");
 			});
 		</script>		
 	</body>
