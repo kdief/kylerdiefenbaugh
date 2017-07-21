@@ -1,5 +1,6 @@
 body {
 	background-color: black;
+	color: white;
 }
 
 a {
@@ -88,4 +89,8 @@ a:active {
 @keyframes blink-caret {
   from, to { border-color: transparent }
   50% { border-color: white; }
+}
+
+td {
+	padding: 10px;
 }
