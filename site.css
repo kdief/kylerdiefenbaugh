@@ -44,9 +44,16 @@ a:active {
 	font-size: 20px;
 }
 
+#header-title-right {
+	font-size: 25px;
+}
+
 .text-div {
 	padding: 50px;
-	visibility: hidden;
+	font-size: 17px;
+}
+#text-div-right {
+	font-size: 20px;
 }
 
 .console {
