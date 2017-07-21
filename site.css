@@ -59,8 +59,8 @@ a:active {
 }
 
 #contact-link {
-	margin-top: 60px;
-	font-size: 22px;
+	width: 150px;
+	margin-top: 50px;
 }
 
 .animation-typing {
